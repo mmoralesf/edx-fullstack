@@ -179,6 +179,12 @@ import calendar
             <input class="" id="email" type="email" name="email" value="${email}" placeholder="${_('example: username@domain.com')}" required aria-required="true" />
           </li>
 
+          <li class="field required text" id="field-mobile">
+            <label for="mobile">${_('Mobile number')}</label>
+            <input id="mobile" type="text" name="mobile" value="${mobile}" placeholder="${_('example: 13800010002')}" required aria-required="true" aria-describedby="mobile-tip"/>
+            <span class="tip tip-input" id="mobile-tip">${_('The mobile will be used to verify the identity')}</span>
+          </li>
+
           <li class="field required text" id="field-name">
             <label for="name">${_('Full Name')}</label>
             <input id="name" type="text" name="name" value="${name}" placeholder="${_('example: Jane Doe')}" required aria-required="true" aria-describedby="name-tip" />
